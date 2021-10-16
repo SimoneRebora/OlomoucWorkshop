@@ -4,7 +4,7 @@ library(tidyverse)
 library(reshape2)
 
 # 1. Read the data (into a dataframe)
-SWAS_1 <- read.csv("data/Network_lines.csv", header = T, row.names = 1)
+SWAS_1 <- read.csv("data/Story_Word_Absorption/Network_lines.csv", header = T, row.names = 1)
 
 # prepare data for visualization
 SWAS_melt <- melt(t(SWAS_1))
@@ -21,7 +21,7 @@ my_plot
 ggsave(my_plot, filename = "story_1.png", scale = 2)
 
 # 2. Read the data (into a dataframe) for story 2
-SWAS_2 <- read.csv("data/Empty_grave.csv", header = T, row.names = 1)
+SWAS_2 <- read.csv("data/Story_Word_Absorption/Empty_grave.csv", header = T, row.names = 1)
 
 # prepare data for visualization
 SWAS_melt <- melt(t(SWAS_2))
