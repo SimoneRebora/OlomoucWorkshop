@@ -64,10 +64,12 @@ View(syuzhet_dict)
 # let's test syuzhet on tough sentences
 my_sentence <- "Well, he was like a potato!"
 get_sentiment(my_sentence, method="syuzhet")
+get_sentiment(my_sentence, method="afinn")
 
 # give me one sentence!
 my_sentence <- "..."
 get_sentiment(my_sentence, method="syuzhet")
+get_sentiment(my_sentence, method="afinn")
 
 ### Your turn!!
 # Suggested activities: 

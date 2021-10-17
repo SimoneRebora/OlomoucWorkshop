@@ -1,5 +1,9 @@
 # Story_World_Absoption
 
+# install new package
+install.packages("reshape2")
+
+# load packages
 library(tidyverse)
 library(reshape2)
 

@@ -172,10 +172,10 @@ library(tidyverse)
 
 # for example: find the Italian author in our dataframe of authors
 # with base R, you should do like that
-my_authors[which(my_authors$nationality == "Italian"),]
+my_df[which(my_df$nationality == "Italian"),]
 
 # with tidyverse, you do like
-my_authors %>% filter(nationality == "Italian")
+my_df %>% filter(nationality == "Italian")
 
 ### Appendix
 # note: the "<-" sign can be substitited by "="

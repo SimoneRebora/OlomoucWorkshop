@@ -59,7 +59,7 @@ stylo()
 #   - "CA"
 #     - (that is cluster analysis, i.e. dendrograms)
 #   - "BCT"
-#     - (that is bootsrap consensus tree)
+#     - (that is bootstrap consensus tree)
 # 
 # [Example]
 # stylo(corpus.lang = "Italian", mfw.min = 100, mfw.max = 1000, mfw.incr = 100, distance.measure = "dist.wurzburg", analysis.type = "BCT")
@@ -114,4 +114,6 @@ sort(results_stylo$frequencies.0.culling[,lights_position], decreasing = T)
 # Suggested activity: run the same analyses with a different selection of features
 
 # 4. Stylo network
+install.packages('networkD3')
 stylo.network()
+# note: between the brackets, you can add the features described above
